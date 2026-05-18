@@ -6712,7 +6712,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -6733,7 +6733,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -6754,7 +6754,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -6775,7 +6775,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -6796,7 +6796,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -6817,7 +6817,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -6838,7 +6838,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -6859,7 +6859,7 @@ MONSTER_STATS = {
             "%attack% +0 %boss-aoe-elder-drake-sp1%"
           ],
           "special2": [
-            "%move% and summon 2 Zephyrs"
+            "Summon 2 Zephyrs and %move%"
           ],
           "immunities": [
             "%wound%",
@@ -7658,13 +7658,13 @@ MONSTER_STATS = {
           "range": 0,
           "special1": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 1)",
             "%move% +2",
             "%attack% -1"
           ],
           "special2": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 2)",
             "%move% +2",
             "%attack% -1"
           ],
@@ -7686,13 +7686,13 @@ MONSTER_STATS = {
           "range": 0,
           "special1": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 1)",
             "%move% +2",
             "%attack% -1"
           ],
           "special2": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 2)",
             "%move% +2",
             "%attack% -1"
           ],
@@ -7714,13 +7714,13 @@ MONSTER_STATS = {
           "range": 0,
           "special1": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 1)",
             "%move% +2",
             "%attack% -1"
           ],
           "special2": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 2)",
             "%move% +2",
             "%attack% -1"
           ],
@@ -7770,13 +7770,13 @@ MONSTER_STATS = {
           "range": 0,
           "special1": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 1)",
             "%move% +2",
             "%attack% -1"
           ],
           "special2": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 2)",
             "%move% +2",
             "%attack% -1"
           ],
@@ -7798,13 +7798,13 @@ MONSTER_STATS = {
           "range": 0,
           "special1": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 1)",
             "%move% +2",
             "%attack% -1"
           ],
           "special2": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 2)",
             "%move% +2",
             "%attack% -1"
           ],
@@ -7826,13 +7826,13 @@ MONSTER_STATS = {
           "range": 0,
           "special1": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 1)",
             "%move% +2",
             "%attack% -1"
           ],
           "special2": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 2)",
             "%move% +2",
             "%attack% -1"
           ],
@@ -7854,13 +7854,13 @@ MONSTER_STATS = {
           "range": 0,
           "special1": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 1)",
             "%move% +2",
             "%attack% -1"
           ],
           "special2": [
             "Throne moves",
-            "Summon Demon",
+            "Summon Demon (Special 2)",
             "%move% +2",
             "%attack% -1"
           ],

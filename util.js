@@ -1,7 +1,7 @@
 
 function shuffle_list(l)
 {
-    for (var i = 0; i < l.length; i++)
+    for (var i = 0; i < l.length-1; i++)
     {
         // Based on https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Implementation_errors
         var switch_index = i + Math.floor(Math.random() * (l.length - i));
@@ -60,6 +60,7 @@ function create_button(type, id, value)
 function dict_values(dict)
 {
     var values = [];
+    var key;
     for (key in dict) {
         values.push(dict[key]);
     }
@@ -88,12 +89,20 @@ function remove_empty_strings(array)
 }
 
 function write_to_storage(name, value) {
-    localStorage.setItem(name, value);
-    console.log("Wrote " + name + " to local storage, with value: " + value);
+    try {
+        localStorage.setItem(name, value);
+    } catch (e) {
+        console.error('Local storage is required');
+    }
+    // console.info("Local storage write:", name, value);
 }
 
 function get_from_storage(name) {
-    return localStorage.getItem(name);
+    try {
+        return localStorage.getItem(name);
+    } catch (e) {
+        console.error('Local storage is required');
+    }
 }
 
 function find_in_discard(discard, id) {

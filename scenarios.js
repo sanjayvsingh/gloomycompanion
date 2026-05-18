@@ -45,7 +45,6 @@ SCENARIO_DEFINITIONS =
         , decks:
             [   {"name": "Cultist"}
             ,   {"name": "Living Bones"}
-            ,   {"name": "Living Corpse"}
             ,   {"name": "Night Demon"}
             ,   {"name": "Flame Demon"}
             ,   {"name": "Frost Demon"}
@@ -295,6 +294,9 @@ SCENARIO_DEFINITIONS =
             ,   {"name": "Frost Demon"}
             ,   {"name": "Earth Demon"}
             ,   {"name": "Wind Demon"}
+            ,   {"name": "City Archer"}
+            ,   {"name": "City Guard"}             
+            ,   {"name": "Boss: Captain of the Guard"}
             ]
         },
         { name: "#36 Gloomhaven Battlements B"
@@ -740,9 +742,9 @@ SCENARIO_DEFINITIONS =
             ,   {"name": "Inox Guard"}
             ,   {"name": "Bandit Archer"}
             ,   {"name": "City Archer"}
-            ,   {"name": "Savvas Icestorm"}
-            ,   {"name": "Frost Demon"}
-            ,   {"name": "Wind Demon"}
+            ,   {"name": "Savvas Lavaflow"}
+            ,   {"name": "Flame Demon"}
+            ,   {"name": "Earth Demon"}
             ]
         },
         { name: "#93 Sunken Vessel"

@@ -63,31 +63,26 @@
 
     display:                    -webkit-flex;
     -webkit-flex-direction:     row;
-    -webkit-justify-content:    center;
+    justify-content:    center;
 
     display:                    flex;
     flex-direction:             row;
     justify-content:            center;
+    align-items: center;
 
 }
 
 .icon-text
 {
-    width:                      32%;
-    height:                     100%;
+    width:                      33%;
     text-align:                 center;
     margin:                     0;
 
     color:                      white;
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-
+    text-shadow: 0 5px 12px rgba(0,0,0,0.9);
     font-family:                'Nyala', 'Sakkal Majalla', 'Philosopher', sans-serif;
     font-size:                  150%;
-    line-height:                1.5;
+    line-height: 1;
 }
 
 .counter-icon .background
@@ -116,32 +111,33 @@
 .counter-icon.shuffle
 {
     background-repeat:          no-repeat;
-    background-position:        100% 50%;
+    background-position:        center center;
     background-image:           url(images/shuffle-black.svg);
-    background-size:            contain;
+    background-size:            50%;
     cursor:                     pointer;
 
     position:                   absolute;
-    left:                       0;
-    bottom:                     -40%;
+    right:                      18%;
+    bottom:                     10px;
     width:                      20%;
     height:                     20%;
+    margin: 0;
+}
+
+.shuffle.not-required
+{
+    opacity:                    0.15;
 }
 
 .counter-icon .button
 {
-    width:                      33%;
+    width:                      32%;
     height:                     100%;
     margin:                     0;
 
     font-family:                Helvetica, Arial, sans-serif;
     font-weight:                bold;
     font-size:                  180%;
-    text-shadow:
-        -1px -1px 0 #fff,
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
 
   -webkit-touch-callout:        none; /* iOS Safari */
     -webkit-user-select:        none; /* Safari */
@@ -155,24 +151,28 @@
 
 .increment.button
 {
-    color:                      #080;
+    opacity: 0.7;
+    text-indent: -999em;
+    background: url(images/plus-circle.svg) center center no-repeat;
 }
 
 .decrement.button
 {
-    color:                      #800;
+  opacity: 0.7;
+  text-indent: -999em;
+  background: url(images/minus-circle.svg) center center no-repeat;
 }
 
 .draw-two.button
 {
     position:                   absolute;
-    right:                      33%;
-    bottom:                     0;
+    right:                      42%;
+    bottom:                     10px;
     width:                      20%;
     height:                     20%;
     background-repeat:          no-repeat;
-    background-position:        100% 50%;
-    background-size:            contain;
+    background-position:        center center;
+    background-size:            50%;
     background-image:           url(images/draw-two.svg);
     cursor:                     pointer;
 }
@@ -213,21 +213,7 @@
     overflow:                   hidden;
 }
 
-@-webkit-keyframes pull-front
-{
-    0%                          { z-index: -3; -webkit-transform: translate3d(-1rem, -1rem, 1000px) rotateY(180deg); }
-    49%                         { z-index: -2; -webkit-transform: translate3d(-50%, -20%, 2000px)   rotateY(90deg); }
-    51%                         { z-index:  0; -webkit-transform: translate3d(-50%, -20%, 4000px)   rotateY(90deg); }
-    100%                        { z-index:  0; -webkit-transform: translate3d(0, 0, 4000px)         rotateY(0deg); }
-}
 
-@-webkit-keyframes pull-back
-{
-    0%                          { z-index: -3; -webkit-transform: translate3d(-1rem, -1rem, 1000px) rotateY(0deg); }
-    49%                         { z-index: -2; -webkit-transform: translate3d(-50%, -20%, 2000px)   rotateY(90deg); }
-    51%                         { z-index:  0; -webkit-transform: translate3d(-50%, -20%, 4000px)   rotateY(90deg); }
-    100%                        { z-index:  0; -webkit-transform: translate3d(0, 0, 4000px)         rotateY(180deg); }
-}
 
 @keyframes pull-front
 {
@@ -245,6 +231,29 @@
     100%                        { z-index:  0; transform: translate(0, 0)           rotateY(180deg); }
 }
 
+@keyframes lift
+{
+    0%                          { z-index: -1; }
+    50%                         { z-index: -1; }
+    100%                        { z-index: -4; }
+}
+
+@-webkit-keyframes pull-front
+{
+    0%                          { z-index: -3; -webkit-transform: translate3d(-1rem, -1rem, 1000px) rotateY(180deg); }
+    49%                         { z-index: -2; -webkit-transform: translate3d(-50%, -20%, 2000px)   rotateY(90deg); }
+    51%                         { z-index:  0; -webkit-transform: translate3d(-50%, -20%, 4000px)   rotateY(90deg); }
+    100%                        { z-index:  0; -webkit-transform: translate3d(0, 0, 4000px)         rotateY(0deg); }
+}
+
+@-webkit-keyframes pull-back
+{
+    0%                          { z-index: -3; -webkit-transform: translate3d(-1rem, -1rem, 1000px) rotateY(0deg); }
+    49%                         { z-index: -2; -webkit-transform: translate3d(-50%, -20%, 2000px)   rotateY(90deg); }
+    51%                         { z-index:  0; -webkit-transform: translate3d(-50%, -20%, 4000px)   rotateY(90deg); }
+    100%                        { z-index:  0; -webkit-transform: translate3d(0, 0, 4000px)         rotateY(180deg); }
+}
+
 @-webkit-keyframes lift
 {
     0%                          { z-index: -1; -webkit-transform: translateZ(3000px); }
@@ -252,12 +261,6 @@
     100%                        { z-index: -4; }
 }
 
-@keyframes lift
-{
-    0%                          { z-index: -1; }
-    50%                         { z-index: -1; }
-    100%                        { z-index: -4; }
-}
 
 .card.front.pull
 {
@@ -368,7 +371,7 @@
     margin:                     0 2ch;
     padding-top:                2.5em;
     box-sizing:                 border-box;
-    overflow:                   hidden;
+    overflow:                   visible; /* hidden would be nicer, but for rare layouts or large AOE images better to show even overlfowing off the card, than to cut it off completely as it is vital information */
 
     display:                    -webkit-box;
     -webkit-box-orient:         vertical;
@@ -387,6 +390,7 @@
 .card li
 {
     margin:                     0.25em 0;
+    margin-left:                17%;
 }
 
 .card li li
@@ -447,7 +451,7 @@ div.collapse
 {
     display:                    inline-block;
     width:                      0;
-    height:                     0;
+    height:                     1px; /* can't be 0 or MS Edge hides the whole div; sigh */
 }
 
 .element
@@ -471,6 +475,29 @@ div.collapse
     left:                       0;
     top:                        18%;
     width:                      19%;
+}
+
+.card .healthNormal
+{
+    font-size:                  130%;
+    text-align:                 left;
+
+    position:                   absolute;
+    left:                       3%;
+    top:                        45%;
+    width:                      15%;
+}
+
+.card .healthElite
+{
+	color:						gold;
+    font-size:                  130%;
+    text-align:                 left;
+
+    position:                   absolute;
+    left:                       3%;
+    top:                        70%;
+    width:                      15%;
 }
 
 .card.front .name

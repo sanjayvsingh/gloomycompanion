@@ -46,7 +46,7 @@ DECK_DEFINITONS =
             , [false, "37", "* %push% 1", "** Target all adjacent enemies", "* %attack% -1 %aoe-triangle-2-side%", "** %range% -1"]
             , [false, "37", "* %push% 1", "** Target all adjacent enemies", "* %attack% -1 %aoe-circle%", "** %range% -1"]
             , [false, "17", "* %push% 2", "** Target all adjacent enemies", "* %shield% 2", "* %attack% -2", "** %range% +0"]
-            , [false, "95", "* %attack% +1","** %range% +0",]
+            , [false, "95", "* %attack% +1","** %range% +0"]
             , [false, "46", "* %attack% -1 %aoe-triangle-2-side%", "** %range% +0","** %immobilize%"]
             ]
         },
@@ -58,7 +58,7 @@ DECK_DEFINITONS =
             , [false, "44", "* %move% -1", "* %attack% +1", "** %range% +0"]
             , [false, "56", "* %attack% -1", "** %range% +0", "** %target% 2"]
             , [true,  "68", "* %attack% +1", "** %range% +1"]
-            , [false, "14", "* %move% -1", "* %attack% -1", , "** %range% +0", "* <span class='small'> Create a 3 damage trap in an adjacent empty hex closest to an enemy </span>"]
+            , [false, "14", "* %move% -1", "* %attack% -1", "** %range% +0", "* <span class='small'> Create a 3 damage trap in an adjacent empty hex closest to an enemy </span>"]
             , [true,  "29", "* %move% +0", "* %attack% -1", "** %range% +1", "** %immobilize%"]
             ]
         },
@@ -130,7 +130,7 @@ DECK_DEFINITONS =
             , [false, "49", "* %attack% +0 %aoe-line-3-with-black%", "** <table align='center'><tr><td>%fire%%use_element%:</td> <td> +1 %attack% <br\> %wound% </td> </tr> </table>"]
             , [false, "67", "* %move% -1", "* %attack% +1", "** %range% -1", "* %fire%"]
             , [false, "77", "* %attack% +0", "** Target all adjacent enemies", "** %ice%%use_element%:Flame Demon suffers 1 damage."]
-            , [true,  "30", "* <table align='center'><tr> <td>  %fire%%use_element%: </td> <td> <span class='small'>All adjacent enemies<br/>suffer 2 damage.</span> </td> </tr> </table>", "* %move% +0", "* %attack% -2", "** %wound%","** %target% 2"]
+            , [true,  "30", "* <table align='center'><tr> <td>  %fire%%use_element%: </td> <td> <span class='small'>All adjacent enemies<br/>suffer 2 damage.</span> </td> </tr> </table>", "* %move% +0", "* %attack% -2", "** %range% +0", "** %wound%", "** %target% 2"]
             , [false, "08", "* %move% -1", "* <span class='small'> Create a 4 damage trap in an adjacent empty hex closest to an enemy </span>", "* %any%%use_element%: %fire%"]
             ]
         },
@@ -201,7 +201,7 @@ DECK_DEFINITONS =
             , [false, "37", "* %move% +0", "* %attack% +0","** %range% +0"]
             , [false, "42", "* %move% +1", "* %heal% 2", "** %range% 3"]
             , [true,  "43", "* %move% +0", "* %attack% -1", "** %range% +0, %target% 2, %poison%"]
-            , [false, "76", "* %move% -1", "* %attack% +1", "** %range% +0",]
+            , [false, "76", "* %move% -1", "* %attack% +1", "** %range% +0"]
             , [true,  "43", "* %move% +0", "* %attack% -1", "** %range% +0, %target% 2, %curse%"]
             , [false, "24", "* %strengthen%", "** Affect all allies within %range% 2", "* %muddle%", "** Target all enemies within %range% 2"]
             ]
@@ -235,7 +235,7 @@ DECK_DEFINITONS =
             [ [true,  "22", "* %move% -1", "* %attack% -1", "** %range% +0", "** %muddle%"]
             , [true,  "33", "* %move% +0", "* %attack% -1", "** %range% +0", "** Target all enemies within range"]
             , [false, "48", "* %move% +0", "* %attack% +0", "** %range% +0"]
-            , [false, "48", "* %move% +0", "* %attack% +0", "** %range% +0",]
+            , [false, "48", "* %move% +0", "* %attack% +0", "** %range% +0"]
             , [false, "61", "* %attack% +0", "** %range% -1", "** %target% 2"]
             , [false, "75", "* %move% -1", "* %attack% +1", "** %range% -1", "* %heal% 1", "** Self"]
             , [false, "55", "* %move% +0", "* %curse%", "** %range% +0", "** Target all enemies within range", "* %ice%"]
@@ -358,13 +358,13 @@ DECK_DEFINITONS =
             , [false, "65", "* %move% +0", "* %attack% +0"]
             , [false, "72", "* %attack% +1", "** %range% 3", "* Stone Golem suffers 2 damage"]
             , [true,  "90", "* %move% -1", "* %attack% +1"]
-            , [false, "28", "* %move% +1", "* %attack% -2", "** %range% 3", "* %pull% 2", "** %immobilize%"]
+            , [false, "28", "* %move% +1", "* %attack% -2", "** %range% 3", "** %pull% 2", "** %immobilize%"]
             , [false, "83", "* %move% +0", "* %attack% -1", "** Target all adjacent enemies"]
             ]
         },
         { class: "Sun Demon"
         , cards:
-            [ [true,  "17", "* %heal% 3", "** %range% 3", "** %light%%use_element%: Target all allies within range"]
+            [ [true,  "17", "* %heal% 3", "** %range% 3", "** %light%%use_element%: Target all allies within range instead"]
             , [false, "36", "* %move% +0", "* %attack% +0", "** Target all adjacent enemies", "* %light%"]
             , [false, "36", "* %move% +0", "* %attack% +0", "** Target all adjacent enemies", "* %light%"]
             , [false, "68", "* %move% +0", "* %attack% +1", "* %light%"]
